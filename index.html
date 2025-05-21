@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies Seacrch Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="logo">
+            <div class="container">
+                <p>Movies <span>World.</span></p>
+            </div>
+        </div>
+        <div class="search-container">
+            <div class="search-element">
+                <h3>Search Movies :</h3>
+                <input type="text" class="form-control" placeholder="Seacrch Movie Title" id="movie-search-box" onkeyup="findMovies()">
+                <div class="search-list" id="search-list">
+                </div>
+            </div>
+        </div>
+ 
+        <div class="container">
+            <div class="result-container">
+                <div class="result-grid" id="result-grid">
+                    <div class="movie-poster">
+                        <img src="things.jpeg" alt="Movie Poster" onerror="this.onerror=null;this.src='https://via.placeholder.com/300x400?text=No+Image';">
+                    </div>
+                    <div class="movie-info">
+                        <h3 class="movie-title">Stranger Things</h3>
+                        <ul class="movie-misc-info">
+                            <li class="year">Year: 2017</li>
+                            <li class="rated">Rating : PG-16</li>
+                            <li class="released">Released : 2016</li>
+                        </ul>
+                        <p class="genre"><b>Genre:</b>Fiction,Adventure,Comedy</p>
+                        <p class="writer"><b>Writer:</b>Duffer Brother</p>
+                        <p class="actors"><b>Actors:</b>Bille Bobby Brown,Joe kerry,Sanie Sink,Finn,Caleb,Gaten</p>
+                        <p class="plot"><b>Plot:</b>"Stranger Things" revolves around the fictional town of Hawkins, Indiana, in the 1980s, where supernatural events occur after a portal to an alternate dimension called the Upside Down is opened. The series follows a group of friends, a worried mother, and a police chief as they investigate these events, which include the disappearance of a young boy and the appearance of a psychokinetic girl from a secret government lab.</p>
+                        <p class="Lanuage"><b>Language:</b>English</p>
+                        <p class="awards"><b><i class="fas fa-award"></i></b>Oscars</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function findMovies() {
+            console.log("findMovies called");
+            let moviePoster = Movies[index].Poster !== "N/A"
+                ? Movies[index].Poster
+                : "image_not_found.png";
+            // rest of your code...
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
